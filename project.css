@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    box-shadow: 0px 0px 20px rgb(124, 7, 7);
+    background-color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+li{
+    display: inline;
+    padding: 50px;
+    /* margin-top: 50p/x; */
+    font-size: 20px;
+}
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    position: relative;
+
+}
+a::after{
+    content: "";
+   position: absolute;
+    height: 10px;
+    background-color: red;
+    display: block;
+    bottom: 10px;
+   
+}
+/* a::after{
+    margin: 0;
+    width: 0;
+} */
+span{
+    color: red;
+}
+.vid_back{  
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 65px;
+    color: white;
+    margin-bottom: 50px;
+}
+.content a{
+     font-size: 23px;
+     color: white; 
+    text-decoration: none;
+    border:  2px solid white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    /* margin-left: 3px; */
+}
+.content a:hover{
+  box-shadow: 0px 0PX 10px red;
+  transition: 0.6s;
+}
+.Active{
+    border-bottom: 2px solid red;
+}
+.background_clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.my_para{
+    /* transform: rotate(-45deg); */
+    /* margin-top: -120px;
+    margin-left: -80px; */
+    font-size: 18px;
+    text-align: center;
+    /* color: red; */
+    margin-top: 80px;
+}
+@media(min-aspect-ratio:16/9) {
+ .background_clip{
+    width: 100%;
+    height: auto;
+ }   
+}
+@media (max-aspect-ratio:16/9){
+    .background_clip{
+        width: auto;
+        height: 100%;
+    }
+}
+.headTwo{
+    text-align: center;
+    padding: 30px;
+}
+.container{
+    width: 100%;
+    height: 50vh;
+    /* background: gray; */
+
+}
+.upper_contain{
+    width: 100%;
+    display: flex;
+    padding-left: 80px;
+    padding-bottom: 30px;
+}
+.right_div{
+    width: 50%;
+    /* height: 60vh; */
+    display: flex;
+    /* background: green; */
+    position: relative;
+    margin: 5px;
+    
+}
+
+.sub_four{
+    width: 200px;
+    height: 200px;
+bottom: 20px;
+position: absolute;
+/* background: greenyellow; */
+position: absolute;
+transform: rotate(45deg);
+left: 200px;
+top: 380px;
+box-shadow: 0px 0px 10px red;
+    background-color: red;
+color: white;
+font-weight: bolder;
+cursor: pointer;
+}
+.sub_one{
+position: absolute;
+    width: 200px;
+    height: 200px;
+/* background-color: blue; */
+top: 55px;
+left: 200px;
+transform: rotate(45deg);
+box-shadow: 0px 0px 10px red;
+    background-color: red;
+color: white;
+font-weight: bolder;
+cursor: pointer;
+}
+.sub_two{
+position: absolute;
+    width: 200px;
+    height: 200px;
+/* background: lightcoral; */
+right: 50px;
+top: 220px;
+transform: rotate(45deg);
+box-shadow: 0px 0px 10px red;
+cursor: pointer;
+font-weight: bolder;
+}
+.sub_three{  
+    width: 200px;
+    height: 200px;
+      position: absolute;
+  top: 220px;
+    left: 30px;
+    /* background-color: black; */
+transform: rotate(45deg);
+box-shadow: 0px 0px 10px red;
+cursor: pointer;
+font-weight: bolder;
+
+}
+.left_div{
+    width: 50%;
+    height: 100vh;
+    /* background: yellow; */
+}
+.sub_four:hover{
+    background-color: white;
+    color: red;
+   transition: 0.7s;   
+}
+.sub_one:hover{
+    background-color: white;
+    color: red;
+    transition: 0.7s;
+}
+.sub_two:hover{
+    background-color: red;
+    color: white;
+    transition: 0.7s;
+}
+.sub_three:hover{
+    background: red;
+    color: white;
+    transition: 0.7s;
+}
+.my_video video{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+
+}
+.contents2_wr{
+    width: 100%;
+    height: 50vh;
+    /* background: blue */
+}
+.contents3_wr{
+    width: 100%;
+    height: 60vh;
+    /* background: yellow; */
+}
+.contents3_wr h2{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pers{
+   display: flex; 
+   width: 100%;
+   height: 100vh;
+   /* background: rebeccapurple; */
+   justify-content: space-around;
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 100px;
+
+}
+.pers_id{
+    width: 30.33%;
+    height: 80%;
+    background: white;
+    margin: 5px;
+    position: relative;
+    border-radius: 10px;
+   box-shadow: 0px 0px 10px black;
+
+}
+.contents2_wr{
+    background-color: red;
+    padding: 30px;
+    box-shadow: 0px 0px 10px red;
+   
+}
+.uppers{
+    width: 180px;
+    height: 180px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+    left: 90px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.sub{
+    width: 180px;
+    height: 180px;
+    background: white;
+    border-radius: 10%;
+    position: absolute;
+   bottom: 50px;
+    left: 95px;
+    box-shadow: 0px 0px 10px red;
+    cursor: pointer;
+}
+.drop_down{
+    width: 100%;
+    height: 40vh;
+    background: white;
+    box-shadow: 0px 0px 10px red;
+    padding: 20px;
+    display: flex;
+}
+.sub_drown{
+    width: 50%;
+    height: 10vh;
+    background-color: white;
+    margin: 5px;
+    position: relative;
+    box-shadow: 0px 0px 20px red;
+}
+.my_para{
+position: absolute;
+top: -60px;
+left: 100px;
+}
+.span{
+    position: absolute;
+    left: 230px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.sub:hover{
+background-color: red;
+color: white;
+transition: 0.5s;
+}
+.parag{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+}
+.myFooter{
+    width: 100%;
+    height: 60vh;
+    background: grey;
+    position: relative;
+    top: 1460px;
+    display: flex;
+    justify-content: space-around;
+    align-items:normal;
+}
+.link{
+    display: block;
+    padding-left: 30px;
+    color: white;
+
+}
+.my_links{
+    padding-left: 100px;
+    font-weight: bolder;
+    color: white;
+    
+}
+.parao{
+    padding-top: 50px;
+    font-size: 25px;
+}
+.use_ltt{
+   padding-top: 52px;
+}
+.use_ltt h2{
+    padding-bottom: 30px;
+    color: white;
+}
+.use_ltt input{
+   height: 6vh;
+   
+   /* width: 200px; */
+}
+.myInput{
+    padding-bottom: 50px;
+}
+.use_ltt a{
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+}
+.contact{
+padding-top: 52px;
+color: white;
+}
+.contact h2{
+    padding-bottom: 30px;
+}
